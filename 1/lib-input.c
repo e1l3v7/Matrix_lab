@@ -3,7 +3,7 @@
 int Scanf(int* a)
 {
 	int flag=scanf("%d",a);
-	while(flag != 1 || flag != EOF)
+	while(flag != 1 && flag != EOF)
 	{
 		printf("введен символ, а не число, повторите ввод\n");
 		scanf("%*[^\n]");
